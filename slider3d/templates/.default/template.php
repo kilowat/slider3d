@@ -1,41 +1,6 @@
 <?
 if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
-<?/*
-switch (id)
-	{
-
-
-		case 9:
-			coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, 0, -30, "flipping", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
-			break;
-	}
-i.thumbXOffset3D = e[0];
-            i.thumbXSpace3D = e[1];
-            i.thumbZOffset3D = e[2];
-            i.thumbZSpace3D = e[3];
-            i.thumbYAngle3D = e[4];
-            i.thumbHoverOffset = e[5];
-            i.nrThumbsToDisplay = e[6];
-            i.showRefl = e[7];
-            i.reflDist = e[8];
-            i.showGradient = e[9];
-            FWDS3DCovModTweenMax.to(i.thumbsHolderDO, .8, {
-                angleX: e[10],
-                angleY: e[11],
-                ease: Quart.easeOut
-            });
-            i.topology = e[12];
-            i.gradientColor1 = e[14];
-            i.gradientColor2 = e[15];
-
-
-
-*/
-
-
-?>
 <?
-
 switch ($arParams["THEME_CORUSEL"]) {
     case 0:
         $parametrs = array(
@@ -112,74 +77,74 @@ switch ($arParams["THEME_CORUSEL"]) {
         break;
      case 4:
        $parametrs = array(
-        "thumbXOffset3D"=>240,
-        "thumbXSpace3D" => 0,
-        "thumbZOffset3D" => 0,
-        "thumbZSpace3D" => 20,
-        "thumbYAngle3D" => 0,
-        "thumbHoverOffset" => 0,
-        "showRefl" => true,
-        "reflDist" => 0,
-        "coverflowXRotation"=>-15,
-        "coverflowYRotation"=>0,
-        "topology"=> "onesided",
-        "thumbnailGradientDirection"=>"left",
-        "gradientColor1" => "rgba(0, 0, 0, .2)",
-        "gradientColor2" => "rgba(0, 0, 0, 1)",
+            "thumbXOffset3D"=>240,
+            "thumbXSpace3D" => 0,
+            "thumbZOffset3D" => 0,
+            "thumbZSpace3D" => 20,
+            "thumbYAngle3D" => 0,
+            "thumbHoverOffset" => 0,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>-15,
+            "coverflowYRotation"=>0,
+            "topology"=> "onesided",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, .2)",
+            "gradientColor2" => "rgba(0, 0, 0, 1)",
         );
         break;
      case 5:
        $parametrs = array(
-        "thumbXOffset3D"=>100,
-        "thumbXSpace3D" => 30,
-        "thumbZOffset3D" => 150,
-        "thumbZSpace3D" => 60,
-        "thumbYAngle3D" => 60,
-        "thumbHoverOffset" => 50,
-        "showRefl" => true,
-        "reflDist" => 0,
-        "coverflowXRotation"=>-3,
-        "coverflowYRotation"=>0,
-        "topology"=> "frontonesided",
-        "thumbnailGradientDirection"=>"left",
-        "gradientColor1" => "rgba(0, 0, 0, 1)",
-        "gradientColor2" => "rgba(0, 0, 0, .2)",
+            "thumbXOffset3D"=>100,
+            "thumbXSpace3D" => 30,
+            "thumbZOffset3D" => 150,
+            "thumbZSpace3D" => 60,
+            "thumbYAngle3D" => 60,
+            "thumbHoverOffset" => 50,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>-3,
+            "coverflowYRotation"=>0,
+            "topology"=> "frontonesided",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, 1)",
+            "gradientColor2" => "rgba(0, 0, 0, .2)",
         );
         break;
      case 6:
        $parametrs = array(
-        "thumbXOffset3D"=>86,
-        "thumbXSpace3D" => 78,
-        "thumbZOffset3D" => 200,
-        "thumbZSpace3D" => 93,
-        "thumbYAngle3D" => 70,
-        "thumbHoverOffset" => 0,
-        "showRefl" => true,
-        "reflDist" => 0,
-        "coverflowXRotation"=>-10,
-        "coverflowYRotation"=>0,
-        "topology"=> "acordeon",
-        "thumbnailGradientDirection"=>"left",
-        "gradientColor1" => "rgba(0, 0, 0, 0)",
-        "gradientColor2" => "rgba(0, 0, 0, 0)",
+            "thumbXOffset3D"=>86,
+            "thumbXSpace3D" => 78,
+            "thumbZOffset3D" => 200,
+            "thumbZSpace3D" => 93,
+            "thumbYAngle3D" => 70,
+            "thumbHoverOffset" => 0,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>-10,
+            "coverflowYRotation"=>0,
+            "topology"=> "acordeon",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, 0)",
+            "gradientColor2" => "rgba(0, 0, 0, 0)",
         );
         break;
      case 7:
        $parametrs = array(
-        "thumbXOffset3D"=>86,
-        "thumbXSpace3D" => 78,
-        "thumbZOffset3D" => 200,
-        "thumbZSpace3D" => 93,
-        "thumbYAngle3D" => 70,
-        "thumbHoverOffset" => 0,
-        "showRefl" => true,
-        "reflDist" => 0,
-        "coverflowXRotation"=>-10,
-        "coverflowYRotation"=>0,
-        "topology"=> "flipping",
-        "thumbnailGradientDirection"=>"left",
-        "gradientColor1" => "rgba(0, 0, 0, 0)",
-        "gradientColor2" => "rgba(0, 0, 0, 0)",
+            "thumbXOffset3D"=>86,
+            "thumbXSpace3D" => 78,
+            "thumbZOffset3D" => 200,
+            "thumbZSpace3D" => 93,
+            "thumbYAngle3D" => 70,
+            "thumbHoverOffset" => 0,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>-10,
+            "coverflowYRotation"=>0,
+            "topology"=> "flipping",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, 0)",
+            "gradientColor2" => "rgba(0, 0, 0, 0)",
         );
         break;
   
@@ -202,19 +167,12 @@ switch ($arParams["THEME_CORUSEL"]) {
         );
         break;
 }
-
-
 ?>
 <script type="text/javascript">
     var coverflow;
-
-    FWDUtils.onReady(function(){
-					
+    FWDUtils.onReady(function(){				
                     setupCoverflow();
-
-
     });
-
     function setupCoverflow(){
             coverflow = new FWDSimple3DCoverflow(
             {
@@ -225,7 +183,7 @@ switch ($arParams["THEME_CORUSEL"]) {
                     autoScale:"no",
                     coverflowWidth:<?echo $arParams["SLIDE_WIDHT"]?>,
                     coverflowHeight:<?echo $arParams["SLIDE_HEIGHT"]?>,
-                    skinPath:"/bitrix/components/alienspro/slider3d/templates/.default/images/",
+                    skinPath:"/bitrix/components/alienspro/slider3d/templates/.default/images",
 
                     //main settings
                     backgroundColor:"<?echo $arParams["THEME_COLOR"]?>",
@@ -265,8 +223,8 @@ switch ($arParams["THEME_CORUSEL"]) {
                     textOffset:10,
                     showThumbnailBoxShadow:"yes",
                     thumbnailBoxShadowCss:"0px 2px 2px #111111",
-                    showTooltip:"yes",
-                    dynamicTooltip:"yes",
+                    showTooltip:"no",
+                    dynamicTooltip:"no",
                     showReflection:<?=$parametrs["showRefl"]?>,
                     reflectionHeight:60,
                     reflectionDistance:<?=$parametrs["reflDist"]?>,
@@ -320,38 +278,26 @@ switch ($arParams["THEME_CORUSEL"]) {
                     lightBoxSlideShowDelay:4
             });
            
-
     }
     </script>
     <div id="slider-3d"></div>
-
-    
-    <!-- thumbnails holder -->
     <div id="mainThumbsHolder">
-    <div id="thumbsHolder"></div>
+        <div id="thumbsHolder"></div>
     </div>
-    <!-- coverflow data -->
-    <ul id="playList1" style="display: none;">
-       
-    <!-- category 1 -->
+    <ul id="playList1" style="display: none;"> 
     <ul data-cat="">
         <?foreach($arResult["ITEMS"] as $arItems):?>
-        <? 
-           
-          $slideImages = CFile::ResizeImageGet($arItems["PREVIEW_PICTURE"], Array("width" => $arParams['BIG_WIDTH'], "height" => $arParams['BIG_HEIGHT']));?>
-
+            <?$slideImages = CFile::ResizeImageGet($arItems["PREVIEW_PICTURE"], Array("width" => $arParams['BIG_WIDTH'], "height" => $arParams['BIG_HEIGHT']));?>
              <ul>
-                        <li data-type="media" data-url="<?=$slideImages['src']?>"></li>
-                        <li data-thumbnail-path="<?=$slideImages['src']?>" data-thumbnail-width="<?echo $arParams["THUMBNAIL_WIDHT"]?>" data-thumbnail-height="<?echo $arParams["THUMBNAIL_HEIGHT"]?>"></li>
-                        <li data-thumbnail-text="">
-
-                                <p class="smallLabel"><?=$arItems["NAME"]?></p>
-                        </li>
-                        <li data-info="">
-
-                                <p class="mediaDescriptionText"><?=$arItems["NAME"]?></p>
-                        </li>
-                </ul>
+                <li data-type="media" data-url="<?=$slideImages['src']?>"></li>
+                <li data-thumbnail-path="<?=$slideImages['src']?>" data-thumbnail-width="<?echo $arParams["THUMBNAIL_WIDHT"]?>" data-thumbnail-height="<?echo $arParams["THUMBNAIL_HEIGHT"]?>"></li>
+                <li data-thumbnail-text="">
+                    <p class="smallLabel"><?=$arItems["NAME"]?></p>
+                </li>
+                <li data-info="">
+                    <p class="mediaDescriptionText"><?=$arItems["NAME"]?></p>
+                </li>
+            </ul>
          <?endforeach?>
     </ul>
  </ul>
