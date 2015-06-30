@@ -167,6 +167,7 @@ switch ($arParams["THEME_CORUSEL"]) {
         );
         break;
 }
+
 ?>
 <script type="text/javascript">
     var coverflow;
@@ -183,12 +184,12 @@ switch ($arParams["THEME_CORUSEL"]) {
                     autoScale:"no",
                     coverflowWidth:<?echo $arParams["SLIDE_WIDHT"]?>,
                     coverflowHeight:<?echo $arParams["SLIDE_HEIGHT"]?>,
-                    skinPath:"/bitrix/components/alienspro/slider3d/templates/.default/images",
+                    skinPath:"<?=$templateFolder?>/images",
 
                     //main settings
-                    backgroundColor:"<?echo $arParams["THEME_COLOR"]?>",
-                    backgroundImagePath:"",
-                    backgroundRepeat:"repeat-x",
+                    backgroundColor:"<?echo $arParams["BACKGROUND_COLOR"]?>",
+                    backgroundImagePath:"<?=$arParams["BACKGROUND_IMAGE"]?>",
+                    backgroundRepeat:"<?=$arParams["BACKGROUND_REPEAT"]?>",
                     showDisplay2DAlways:"no",
                     coverflowStartPosition:"center",
                     coverflowTopology:"<?=$parametrs["topology"]?>",

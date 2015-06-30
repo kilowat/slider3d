@@ -78,15 +78,27 @@ $arComponentParameters = array(
 			"PARENT" => "BASE",   
 			"NAME" => GetMessage("FLUID"),
 			"TYPE" => "LIST",
-			"VALUES" => array('responsive'=>'Фиксированный','fluidwidth'=>'Резиновый'),
+			"VALUES" => array('responsive'=>'responsive','fluidwidth'=>'fluidwidth'),
 			"DEFAULT" => 'responsive',
 		),
-    "THEME_COLOR" => Array(
+    "BACKGROUND_COLOR" => Array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("THEME_COLOR"),
+			"NAME" => GetMessage("BACKGROUND_COLOR"),
+			"TYPE" => "STRING",
+			"DEFAULT" => '#fff',
+		),
+     "BACKGROUND_IMAGE" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("BACKGROUND_IMAGE"),
+			"TYPE" => "STRING",
+			"DEFAULT" => '',
+		),
+     "BACKGROUND_REPEAT" => Array(
+			"PARENT" => "BASE",   
+			"NAME" => GetMessage("BACKGROUND_REPEAT"),
 			"TYPE" => "LIST",
-			"VALUES" => array('black'=>'black','white'=>'white'),
-			"DEFAULT" => 'white',
+			"VALUES" => array('repeat-x'=>'repeat-x','repeat-y'=>'repeat-y','no-repeat'=>'no-repeat'),
+			"DEFAULT" => 'no-repeat',
 		),
     "SLIDE_WIDHT" => Array(
 			"PARENT" => "BASE",
