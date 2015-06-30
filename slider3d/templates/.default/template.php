@@ -1,6 +1,5 @@
 <?
 if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
-<?echo 'test';?>
 <?/*
 switch (id)
 	{
@@ -32,15 +31,57 @@ switch (id)
 			coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, 0, -30, "flipping", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
 			break;
 	}
-*/?>
+i.thumbXOffset3D = e[0];
+            i.thumbXSpace3D = e[1];
+            i.thumbZOffset3D = e[2];
+            i.thumbZSpace3D = e[3];
+            i.thumbYAngle3D = e[4];
+            i.thumbHoverOffset = e[5];
+            i.nrThumbsToDisplay = e[6];
+            i.showRefl = e[7];
+            i.reflDist = e[8];
+            i.showGradient = e[9];
+            FWDS3DCovModTweenMax.to(i.thumbsHolderDO, .8, {
+                angleX: e[10],
+                angleY: e[11],
+                ease: Quart.easeOut
+            });
+            i.topology = e[12];
+            i.gradientColor1 = e[14];
+            i.gradientColor2 = e[15];
 
 
+
+coverflow.setPreset([240, 0, 0, 20, 0, 0, 0, true, 0, true, -15, 0, "onesided", "left", "rgba(0, 0, 0, .2)", "rgba(0, 0, 0, 1)"]);
+*/
+
+
+?>
+<?
+$parametrs = array(
+        "thumbXOffset3D"=>240,
+        "thumbXSpace3D" => 0,
+        "thumbZOffset3D" => 0,
+        "thumbZSpace3D" => 20,
+        "thumbYAngle3D" => 0,
+        "thumbHoverOffset" => 0,
+        "showRefl" => true,
+        "reflDist" => 0,
+        "coverflowXRotation"=>-15,
+        "coverflowYRotation"=>0,
+        "topology"=> "onesided",
+        "thumbnailGradientDirection"=>"left",
+        "gradientColor1" => "rgba(0, 0, 0, .2)",
+        "gradientColor2" => "rgba(0, 0, 0, 1)",
+        );
+?>
 <script type="text/javascript">
     var coverflow;
 
     FWDUtils.onReady(function(){
-
+					
                     setupCoverflow();
+
 
     });
 
@@ -62,23 +103,23 @@ switch (id)
                     backgroundRepeat:"repeat-x",
                     showDisplay2DAlways:"no",
                     coverflowStartPosition:"center",
-                    coverflowTopology:"dualsided",
-                    coverflowXRotation:0,
-                    coverflowYRotation:0,
+                    coverflowTopology:"<?=$parametrs["topology"]?>",
+                    coverflowXRotation:<?=$parametrs["coverflowXRotation"]?>,
+                    coverflowYRotation:<?=$parametrs["coverflowYRotation"]?>,
                     numberOfThumbnailsToDisplayLeftAndRight:"all",
                     showContextMenu:"no",
 
                     //thumbnail settings
                     thumbnailWidth:<?echo $arParams["THUMBNAIL_WIDHT"]?>,
                     thumbnailHeight:<?echo $arParams["THUMBNAIL_HEIGHT"]?>,
-                    thumbnailXOffset3D:80,
-                    thumbnailXSpace3D:80,
-                    thumbnailZOffset3D:400,
-                    thumbnailZSpace3D:0,
-                    thumbnailYAngle3D:70,
+                    thumbnailXOffset3D:<?=$parametrs["thumbXOffset3D"]?>,
+                    thumbnailXSpace3D:<?=$parametrs["thumbXSpace3D"]?>,
+                    thumbnailZOffset3D:<?=$parametrs["thumbZOffset3D"]?>,
+                    thumbnailZSpace3D:<?=$parametrs["thumbZSpace3D"]?>,
+                    thumbnailYAngle3D:<?=$parametrs["thumbYAngle3D"]?>,
                     thumbnailXOffset2D:20,
                     thumbnailXSpace2D:30,
-                    thumbnailHoverOffset:100,
+                    thumbnailHoverOffset:<?=$parametrs["thumbHoverOffset"]?>,
                     thumbnailBorderSize:0,
                     thumbnailBackgroundColor:"#FFFFFF",
                     thumbnailBorderColor1:"#FFFFFF",
@@ -87,18 +128,18 @@ switch (id)
                     thumbnailsAlignment:"bottom",
                     maxNumberOfThumbnailsOnMobile:13,
                     showThumbnailsGradient:"yes",
-                    thumbnailGradientDirection:"left",
-                    thumbnailGradientColor1:"rgba(0, 0, 0, 0)",
-                    thumbnailGradientColor2:"rgba(0, 0, 0, 1)",
+                    thumbnailGradientDirection:"<?=$parametrs["thumbnailGradientDirection"]?>",
+                    thumbnailGradientColor1:"<?=$parametrs["gradientColor1"]?>",
+                    thumbnailGradientColor2:"<?=$parametrs["gradientColor2"]?>",
                     showText:"<?echo $arParams["SHOW_TEXT"]?>",
                     textOffset:10,
                     showThumbnailBoxShadow:"yes",
                     thumbnailBoxShadowCss:"0px 2px 2px #111111",
                     showTooltip:"yes",
                     dynamicTooltip:"yes",
-                    showReflection:"yes",
+                    showReflection:<?=$parametrs["showRefl"]?>,
                     reflectionHeight:60,
-                    reflectionDistance:0,
+                    reflectionDistance:<?=$parametrs["reflDist"]?>,
                     reflectionOpacity:.4,
 
                     //controls settings
@@ -148,9 +189,9 @@ switch (id)
                     lightBoxBorderRadius:0,
                     lightBoxSlideShowDelay:4
             });
+           
 
     }
-
     </script>
     <div id="slider-3d"></div>
 
