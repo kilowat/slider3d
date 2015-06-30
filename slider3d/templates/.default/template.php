@@ -3,28 +3,8 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();?>
 <?/*
 switch (id)
 	{
-		case 1:
-			coverflow.setPreset([86, 78, 200, 93, 70, 100, 0, true, 0, true, 0, 0, "dualsided", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 1)"]);
-			break;
-		case 2:
-			coverflow.setPreset([80, 165, 400, 130, -40, 100, 0, true, 0, false, 0, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
-			break;
-		case 3:
-			coverflow.setPreset([86, 78, 200, 93, 2, 100, 0, true, 0, false, 0, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
-			break;
-		case 4:
-			coverflow.setPreset([100, 20, 150, 30, 60, 50, 0, true, 0, true, -15, 0, "dualsided", "left", "rgba(0, 0, 0, .4)", "rgba(0, 0, 0, 1)"]);
-			break;
-	
-		case 6:
-			coverflow.setPreset([240, 0, 0, 20, 0, 0, 0, true, 0, true, -15, 0, "crosssided", "left", "rgba(0, 0, 0, 1)", "rgba(0, 0, 0, .2)"]);
-			break;
-		case 7:
-			coverflow.setPreset([100, 30, 150, 60, 60, 50, 0, true, 0, true, -3, 0, "frontonesided", "left", "rgba(0, 0, 0, 1)", "rgba(0, 0, 0, .2)"]);
-			break;
-		case 8:
-			coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, -10, 0, "acordeon", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
-			break;
+
+
 		case 9:
 			coverflow.setPreset([86, 78, 200, 93, 70, 0, 0, true, 0, true, 0, -30, "flipping", "left", "rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]);
 			break;
@@ -93,7 +73,42 @@ switch ($arParams["THEME_CORUSEL"]) {
             "gradientColor1" => "rgba(0, 0, 0, .4)",
             "gradientColor2" => "rgba(0, 0, 0, 1)",
         );
-
+        break;
+    case 2:
+        $parametrs = array(
+            "thumbXOffset3D"=>86,
+            "thumbXSpace3D" => 78,
+            "thumbZOffset3D" => 200,
+            "thumbZSpace3D" => 93,
+            "thumbYAngle3D" => 2,
+            "thumbHoverOffset" => 100,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>0,
+            "coverflowYRotation"=>0,
+            "topology"=> "dualsided",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, .4)",
+            "gradientColor2" => "rgba(0, 0, 0, 1)",
+        );
+        break;
+    case 3:
+        $parametrs = array(
+            "thumbXOffset3D"=>240,
+            "thumbXSpace3D" => 0,
+            "thumbZOffset3D" => 0,
+            "thumbZSpace3D" => 20,
+            "thumbYAngle3D" => 0,
+            "thumbHoverOffset" => 0,
+            "showRefl" => true,
+            "reflDist" => 0,
+            "coverflowXRotation"=>-15,
+            "coverflowYRotation"=>0,
+            "topology"=> "crosssided",
+            "thumbnailGradientDirection"=>"left",
+            "gradientColor1" => "rgba(0, 0, 0, 1)",
+            "gradientColor2" => "rgba(0, 0, 0, .2)",
+        );
         break;
      case 4:
        $parametrs = array(
@@ -113,7 +128,61 @@ switch ($arParams["THEME_CORUSEL"]) {
         "gradientColor2" => "rgba(0, 0, 0, 1)",
         );
         break;
- 
+     case 5:
+       $parametrs = array(
+        "thumbXOffset3D"=>100,
+        "thumbXSpace3D" => 30,
+        "thumbZOffset3D" => 150,
+        "thumbZSpace3D" => 60,
+        "thumbYAngle3D" => 60,
+        "thumbHoverOffset" => 50,
+        "showRefl" => true,
+        "reflDist" => 0,
+        "coverflowXRotation"=>-3,
+        "coverflowYRotation"=>0,
+        "topology"=> "frontonesided",
+        "thumbnailGradientDirection"=>"left",
+        "gradientColor1" => "rgba(0, 0, 0, 1)",
+        "gradientColor2" => "rgba(0, 0, 0, .2)",
+        );
+        break;
+     case 6:
+       $parametrs = array(
+        "thumbXOffset3D"=>86,
+        "thumbXSpace3D" => 78,
+        "thumbZOffset3D" => 200,
+        "thumbZSpace3D" => 93,
+        "thumbYAngle3D" => 70,
+        "thumbHoverOffset" => 0,
+        "showRefl" => true,
+        "reflDist" => 0,
+        "coverflowXRotation"=>-10,
+        "coverflowYRotation"=>0,
+        "topology"=> "acordeon",
+        "thumbnailGradientDirection"=>"left",
+        "gradientColor1" => "rgba(0, 0, 0, 0)",
+        "gradientColor2" => "rgba(0, 0, 0, 0)",
+        );
+        break;
+     case 7:
+       $parametrs = array(
+        "thumbXOffset3D"=>86,
+        "thumbXSpace3D" => 78,
+        "thumbZOffset3D" => 200,
+        "thumbZSpace3D" => 93,
+        "thumbYAngle3D" => 70,
+        "thumbHoverOffset" => 0,
+        "showRefl" => true,
+        "reflDist" => 0,
+        "coverflowXRotation"=>-10,
+        "coverflowYRotation"=>0,
+        "topology"=> "flipping",
+        "thumbnailGradientDirection"=>"left",
+        "gradientColor1" => "rgba(0, 0, 0, 0)",
+        "gradientColor2" => "rgba(0, 0, 0, 0)",
+        );
+        break;
+  
     default:
         $parametrs = array(
             "thumbXOffset3D"=>86,

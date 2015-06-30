@@ -62,7 +62,16 @@ $arComponentParameters = array(
 			"PARENT" => "BASE",
 			"NAME" => GetMessage("THEME_CORUSEL"),
 			"TYPE" => "LIST",
-			"VALUES" => array('1','2','3'),
+			"VALUES" => array(
+					"dualsided_1",
+					"dualsided_2",
+					"dualsided_3",
+					"crosssided",
+					"onesided",
+					"frontonesided",
+					"acordeon",
+					"flipping"
+			),
 			"DEFAULT" => '1',
 		),
      "FLUID" => Array(
