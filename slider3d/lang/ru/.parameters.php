@@ -41,8 +41,20 @@ $MESS["SLIDE_WIDHT"] = "Ширина блока";
 $MESS["SHOW_TEXT"] = "Показать название";
 $MESS["BACKGROUND_IMAGE"] = "Путь до фона";
 $MESS["BACKGROUND_REPEAT"] = "Настройка фонового изображения";
+$MESS["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Макс число выводимое превьюшек на мобильном устройстве";
+$MESS["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Макс число выводимое превьюшек на мобильном устройстве";
+$MESS["SHOW_THUMBNAILS_GRADIENT"] = "Показывать градиент превьюшек";
+$MESS["TEXT_OFFSET"] = "Отступ загаловка в превьюшках";
+$MESS["PLAY_TIMER"] = "Время переключения слайдов";
+$MESS["PLAY"] = "Автоматически листать слайды";
+$MESS["TIMER_TEXT_COLOR"] = "Цвет текста таймера";
+$MESS["SETTINGS_CONTROL"] = "Настроки управления слайдами";
+$MESS["CONTROL_POSITION"] = "Расположение кнопок управления слайдами";
 
 
 
 
-?>
+
+
+
+

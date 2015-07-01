@@ -34,6 +34,9 @@ while ($arr=$rsProp->Fetch())
 
 $arComponentParameters = array(
 	"GROUPS" => array(
+	"SETTINGS_CONTROL" => array(
+         "NAME" => GetMessage("SETTINGS_CONTROL")
+      ),
 	),
 	"PARAMETERS" => array(
 		"IBLOCK_ID" => Array(
@@ -81,6 +84,26 @@ $arComponentParameters = array(
 			"VALUES" => array('responsive'=>'responsive','fluidwidth'=>'fluidwidth'),
 			"DEFAULT" => 'responsive',
 		),
+	"PLAY" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("PLAY"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => "no",
+		),	
+    "PLAY_TIMER" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("PLAY_TIMER"),
+			"TYPE" => "STRING",
+			"DEFAULT" => 5000,
+		),
+    "TIMER_TEXT_COLOR" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("TIMER_TEXT_COLOR"),
+			"TYPE" => "STRING",
+			"DEFAULT" => '#fff',
+		),
+		
     "BACKGROUND_COLOR" => Array(
 			"PARENT" => "BASE",
 			"NAME" => GetMessage("BACKGROUND_COLOR"),
@@ -112,18 +135,6 @@ $arComponentParameters = array(
 			"TYPE" => "STRING",
 			"DEFAULT" => "500",
 		),
-    "THUMBNAIL_WIDHT" => Array(
-			"PARENT" => "BASE",
-			"NAME" => GetMessage("THUMBNAIL_WIDHT"),
-			"TYPE" => "STRING",
-			"DEFAULT" => "200",
-		),
-     "THUMBNAIL_HEIGHT" => Array(
-			"PARENT" => "BASE",
-			"NAME" => GetMessage("THUMBNAIL_HEIGHT"),
-			"TYPE" => "STRING",
-			"DEFAULT" => "200",
-		),
       "BIG_WIDTH" => Array(
 			"PARENT" => "BASE",
 			"NAME" => GetMessage("BIG_WIDTH"),
@@ -136,21 +147,43 @@ $arComponentParameters = array(
 			"TYPE" => "STRING",
 			"DEFAULT" => "600",
 		),
-		"SORT_BY1" => Array(
-			"PARENT" => "DATA_SOURCE",
-			"NAME" => GetMessage("T_IBLOCK_DESC_IBORD1"),
-			"TYPE" => "LIST",
-			"DEFAULT" => "ACTIVE_FROM",
-			"VALUES" => $arSortFields,
-			"ADDITIONAL_VALUES" => "Y",
+    "THUMBNAIL_WIDHT" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("THUMBNAIL_WIDHT"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "200",
 		),
-		"SORT_ORDER1" => Array(
-			"PARENT" => "DATA_SOURCE",
-			"NAME" => GetMessage("T_IBLOCK_DESC_IBBY1"),
+     "THUMBNAIL_HEIGHT" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("THUMBNAIL_HEIGHT"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "200",
+		),
+     "MAX_NUM_THUMBNAILS_ON_MOBILE" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("MAX_NUM_THUMBNAILS_ON_MOBILE"),
+			"TYPE" => "STRING",
+			"DEFAULT" => 13,
+		),
+     "SHOW_THUMBNAILS_GRADIENT" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("SHOW_THUMBNAILS_GRADIENT"),
 			"TYPE" => "LIST",
-			"DEFAULT" => "DESC",
-			"VALUES" => $arSorts,
-			"ADDITIONAL_VALUES" => "Y",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+	  "TEXT_OFFSET" => Array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("TEXT_OFFSET"),
+			"TYPE" => "STRING",
+			"DEFAULT" => 10,
+		),
+	  "CONTROL_POSITION" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_POSITION"),
+			"TYPE" => "LIST",
+			"VALUES" => array('bottom'=>'снизу','top'=>'сверху'),
+			"DEFAULT" => "botton",
 		),
 						
 		"CACHE_TIME"  =>  Array("DEFAULT"=>36000000),
