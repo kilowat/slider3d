@@ -34,9 +34,12 @@ while ($arr=$rsProp->Fetch())
 
 $arComponentParameters = array(
 	"GROUPS" => array(
-	"SETTINGS_CONTROL" => array(
-         "NAME" => GetMessage("SETTINGS_CONTROL")
-      ),
+		"SETTINGS_CONTROL" => array(
+			 "NAME" => GetMessage("SETTINGS_CONTROL")
+		  ),
+		"SETTINGS_LIGHT_BOX" => array(
+			 "NAME" => GetMessage("SETTINGS_LIGHT_BOX")
+		  ),
 	),
 	"PARAMETERS" => array(
 		"IBLOCK_ID" => Array(
@@ -184,6 +187,116 @@ $arComponentParameters = array(
 			"TYPE" => "LIST",
 			"VALUES" => array('bottom'=>'снизу','top'=>'сверху'),
 			"DEFAULT" => "botton",
+		),
+	  "CONTROL_OFFSET" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_OFFSET"),
+			"TYPE" => "STRING",
+			"DEFAULT" => 10,
+		),
+     "CONTROL_PREV_NEXT_BUTTON" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_PREV_NEXT_BUTTON"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "CONTROL_SLIDE_BUTTON" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_SLIDE_BUTTON"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "CONTROL_SCROLL_BAR" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_SCROLL_BAR"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "CONTROL_ENABLED_MOUSE_WHEEL_SCROLL" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_ENABLED_MOUSE_WHEEL_SCROLL"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+	  "CONTROL_SCROLL_BAR_TEXT_COLOR_NORMAL" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_SCROLL_BAR_TEXT_COLOR_NORMAL"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#CCC",
+		),
+	  "CONTROL_SCROLL_BAR_TEXT_COLOR_SELECTED" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_SCROLL_BAR_TEXT_COLOR_SELECTED"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#FFF",
+		),
+     "CONTROL_SCROLL_BAR_KEYBOARD_SUPPORT" => Array(
+			"PARENT" => "SETTINGS_CONTROL",
+			"NAME" => GetMessage("CONTROL_SCROLL_BAR_KEYBOARD_SUPPORT"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "LIGHT_BOX_BUTTON_NEXT_PREV" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_BUTTON_NEXT_PREV"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "LIGHT_BOX_BUTTON_ZOOM" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_BUTTON_ZOOM"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+     "LIGHT_BOX_BUTTON_INFO" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_BUTTON_INFO"),
+			"TYPE" => "LIST",
+			"VALUES" => array('yes'=>'Да','no'=>'Нет'),
+			"DEFAULT" => 'yes',
+		),
+	  "LIGHT_BACKGROUND_COLOR" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BACKGROUND_COLOR"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#000",
+		),
+	  "LIGHT_BOX_BACKGROUND_WINDOW_INFO_COLOR" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_BACKGROUND_WINDOW_INFO_COLOR"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#fff",
+		),
+	  "LIGHT_BOX_ITEMS_BORDER_COLOR_1" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_ITEMS_BORDER_COLOR_1"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#000",
+		),
+	  "LIGHT_BOX_ITEMS_BORDER_COLOR_2" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_ITEMS_BORDER_COLOR_2"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#e4FFe4",
+		),
+	  "LIGHT_BOX_ITEMS_BACKGROUND_COLOR" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_ITEMS_BACKGROUND_COLOR"),
+			"TYPE" => "STRING",
+			"DEFAULT" => "#000",
+		),
+	  "LIGHT_BOX_OPACITY" => Array(
+			"PARENT" => "SETTINGS_LIGHT_BOX",
+			"NAME" => GetMessage("LIGHT_BOX_OPACITY"),
+			"TYPE" => "STRING",
+			"DEFAULT" => ".9",
 		),
 						
 		"CACHE_TIME"  =>  Array("DEFAULT"=>36000000),

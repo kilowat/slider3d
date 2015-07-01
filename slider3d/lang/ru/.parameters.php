@@ -50,6 +50,38 @@ $MESS["PLAY"] = "Автоматически листать слайды";
 $MESS["TIMER_TEXT_COLOR"] = "Цвет текста таймера";
 $MESS["SETTINGS_CONTROL"] = "Настроки управления слайдами";
 $MESS["CONTROL_POSITION"] = "Расположение кнопок управления слайдами";
+$MESS["CONTROL_OFFSET"] = "Отступ элементов управления";
+$MESS["CONTROL_PREV_NEXT_BUTTON"] = "Показать кнопки назад вперед";
+$MESS["CONTROL_SLIDE_BUTTON"] = "Показать время переключения слайда";
+$MESS["CONTROL_SCROLL_BAR"] = "Показать полосу прокрутки";
+$MESS["CONTROL_ENABLED_MOUSE_WHEEL_SCROLL"] = "Включить переключение слайдов колесиком мышки";
+$MESS["CONTROL_SCROLL_BAR_TEXT_COLOR_NORMAL"] = "Цвет текста полосы прокрутки";
+$MESS["CONTROL_SCROLL_BAR_TEXT_COLOR_SELECTED"] = "Цвет наведения на текст полосы прокрутки";
+$MESS["CONTROL_SCROLL_BAR_KEYBOARD_SUPPORT"] = "Поддержка клавиатуры полосы прокрутки";
+$MESS["SETTINGS_LIGHT_BOX"] = "Настройки лайт бокса";
+$MESS["LIGHT_BOX_BUTTON_NEXT_PREV"] = "Показать кнопки назад вперед";
+$MESS["LIGHT_BOX_BUTTON_ZOOM"] = "Показать кнопку zoom";
+$MESS["LIGHT_BOX_BUTTON_INFO"] = "Показать кнопку инфо";
+$MESS["LIGHT_BACKGROUND_COLOR"] = "Цвет фона";
+$MESS["LIGHT_BOX_BACKGROUND_WINDOW_INFO_COLOR"] = "Цвет фона окна информация об изображении";
+$MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_1"] = "Цвет рамки элемнтов-1";
+$MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_2"] = "Цвет рамки элемнтов-2";
+$MESS["LIGHT_BOX_ITEMS_BACKGROUND_COLOR"] = "Цвет фона элеметов";
+$MESS["LIGHT_BOX_OPACITY"] = "Прозрачность фона";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
