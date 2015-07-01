@@ -175,6 +175,17 @@ switch ($arParams["THEME_CORUSEL"]) {
                     setupCoverflow();
     });
     function setupCoverflow(){
+			//fix admin edit panel when slider full screen
+			/*
+			var element = document.getElementById("slider-3d").parentElement;
+			
+			if(element.className == "bx-context-toolbar-empty-area"){
+				element.style ="z-index :1";
+				element.style.height = "<?=$arParams["SLIDE_HEIGHT"]?>px";
+				element.style.position = "absolute";
+				element.style.width = "<?=$arParams["SLIDE_WIDHT"]?>px";
+			}
+			*/
             coverflow = new FWDSimple3DCoverflow(
             {
                     //required settings
@@ -241,6 +252,7 @@ switch ($arParams["THEME_CORUSEL"]) {
            
     }
     </script>
+
     <div id="slider-3d"></div>
     <div id="mainThumbsHolder">
         <div id="thumbsHolder"></div>

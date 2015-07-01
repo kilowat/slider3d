@@ -53,8 +53,7 @@ foreach($arParams["FIELD_CODE"] as $key=>$val)
 
 
 
-if($arParams["NEWS_COUNT"]<=0)
-	$arParams["NEWS_COUNT"] = 20;
+
 
 $arParams["USE_PERMISSIONS"] = $arParams["USE_PERMISSIONS"]=="Y";
 if(!is_array($arParams["GROUP_PERMISSIONS"]))
@@ -160,9 +159,6 @@ if($this->StartResultCache(false, array(($arParams["CACHE_GROUPS"]==="N"? false:
 			$arResult["ITEMS"][] = $arItem;
 			$arResult["ELEMENTS"][] = $arItem["ID"];
 		}
-		$arResult["NAV_STRING"] = $rsElement->GetPageNavStringEx($navComponentObject, $arParams["PAGER_TITLE"], $arParams["PAGER_TEMPLATE"], $arParams["PAGER_SHOW_ALWAYS"]);
-		$arResult["NAV_CACHED_DATA"] = $navComponentObject->GetTemplateCachedData();
-		$arResult["NAV_RESULT"] = $rsElement;
 		$this->SetResultCacheKeys(array(
 			"ID",
 			"IBLOCK_TYPE_ID",
@@ -185,55 +181,5 @@ if($this->StartResultCache(false, array(($arParams["CACHE_GROUPS"]==="N"? false:
 	}
 }
 
-if(isset($arResult["ID"]))
-{
-	$arTitleOptions = null;
-	if($USER->IsAuthorized())
-	{
-		if(
-			$APPLICATION->GetShowIncludeAreas()
-			|| (is_object($GLOBALS["INTRANET_TOOLBAR"]) && $arParams["INTRANET_TOOLBAR"]!=="N")
-			|| $arParams["SET_TITLE"]
-		)
-		{
-			if(CModule::IncludeModule("iblock"))
-			{
-				$arButtons = CIBlock::GetPanelButtons(
-					$arResult["ID"],
-					0,
-					$arParams["PARENT_SECTION"],
-					array("SECTION_BUTTONS"=>false)
-				);
-
-				if($APPLICATION->GetShowIncludeAreas())
-					$this->AddIncludeAreaIcons(CIBlock::GetComponentMenu($APPLICATION->GetPublicShowMode(), $arButtons));
-
-				if(
-					is_array($arButtons["intranet"])
-					&& is_object($INTRANET_TOOLBAR)
-					&& $arParams["INTRANET_TOOLBAR"]!=="N"
-				)
-				{
-					$APPLICATION->AddHeadScript('/bitrix/js/main/utils.js');
-					foreach($arButtons["intranet"] as $arButton)
-						$INTRANET_TOOLBAR->AddButton($arButton);
-				}
-
-				if($arParams["SET_TITLE"])
-				{
-					$arTitleOptions = array(
-						'ADMIN_EDIT_LINK' => $arButtons["submenu"]["edit_iblock"]["ACTION"],
-						'PUBLIC_EDIT_LINK' => "",
-						'COMPONENT_NAME' => $this->GetName(),
-					);
-				}
-			}
-		}
-	}
-
-	$this->SetTemplateCachedData($arResult["NAV_CACHED_DATA"]);
-	
-	return $arResult["ELEMENTS"];
-}
 
 ?>
