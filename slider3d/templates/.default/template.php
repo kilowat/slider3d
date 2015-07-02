@@ -264,8 +264,8 @@ switch ($arParams["THEME_CORUSEL"]) {
              <ul>
 				<?
 				$dataMedia =  '<li data-type="media" data-url="'.$slideImages['src'].'"></li>';
-				if(!empty($arItems["PROPERTY_LINK_VALUE"]))
-					$dataMedia = '<li data-type="link" data-url="'.$arItems["PROPERTY_LINK_VALUE"].'" data-target="_blank"></li>';
+				if(!empty($arItems["PROPERTY_".$arParams["LINK"]."_VALUE"]))
+					$dataMedia = '<li data-type="link" data-url="http://'.$arItems["PROPERTY_".$arParams["LINK"]."_VALUE"].'" data-target="_blank"></li>';
 				?>
                 <?=$dataMedia?>
                 <li data-thumbnail-path="<?=$slideImages['src']?>" data-thumbnail-width="<?echo $arParams["THUMBNAIL_WIDHT"]?>" data-thumbnail-height="<?echo $arParams["THUMBNAIL_HEIGHT"]?>"></li>

@@ -1,84 +1,64 @@
 <?
-$MESS["IBLOCK_CACHE_FILTER"] = "Кешировать при установленном фильтре";
-$MESS["T_IBLOCK_DESC_FID"] = "ID";
-$MESS["T_IBLOCK_DESC_FNAME"] = "Название";
-$MESS["T_IBLOCK_DESC_LIST_ID"] = "Код информационного блока";
-$MESS["T_IBLOCK_DESC_LIST_TYPE"] = "Тип информационного блока (используется только для проверки)";
-$MESS["T_IBLOCK_DESC_LIST_CONT"] = "Количество новостей на странице";
-$MESS["T_IBLOCK_DESC_DETAIL_PAGE_URL"] = "URL страницы детального просмотра (по умолчанию - из настроек инфоблока)";
-$MESS["T_IBLOCK_DESC_INCLUDE_IBLOCK_INTO_CHAIN"] = "Включать инфоблок в цепочку навигации";
-$MESS["T_IBLOCK_PROPERTY"] = "Свойства";
-$MESS["T_IBLOCK_FILTER"] = "Фильтр";
-$MESS["IBLOCK_FIELD"] = "Поля";
-$MESS["T_IBLOCK_DESC_ACTIVE_DATE_FORMAT"] = "Формат показа даты";
-$MESS["T_IBLOCK_DESC_PAGER_NEWS"] = "Новости";
-$MESS["T_IBLOCK_DESC_PREVIEW_TRUNCATE_LEN"] = "Максимальная длина анонса для вывода (только для типа текст)";
-$MESS["T_IBLOCK_DESC_HIDE_LINK_WHEN_NO_DETAIL"] = "Скрывать ссылку, если нет детального описания";
-$MESS["IBLOCK_SECTION_ID"] = "ID раздела";
-$MESS["IBLOCK_SECTION_CODE"] = "Код раздела";
-$MESS["T_IBLOCK_DESC_ADD_SECTIONS_CHAIN"] = "Включать раздел в цепочку навигации";
-$MESS["T_IBLOCK_DESC_CHECK_DATES"] = "Показывать только активные на данный момент элементы";
-$MESS["CP_BNL_SET_STATUS_404"] = "Устанавливать статус 404, если не найдены элемент или раздел";
-$MESS["CP_BNL_CACHE_GROUPS"] = "Учитывать права доступа";
-$MESS["THEME_CORUSEL"] = "Тема карусели";
-$MESS["FLUID"] = "Адаптация по ширине";
-$MESS["BACKGROUND_COLOR"] = "Цвет заливки";
-$MESS["THUMBNAIL_WIDHT"] = "Ширина превью";
-$MESS["THUMBNAIL_HEIGHT"] = "Высота превью";
-$MESS["BIG_WIDTH"] = "Ширина детальной";
-$MESS["BIG_HEIGHT"] = "Выстота детальной";
-$MESS["SLIDE_HEIGHT"] = "Высота блока";
-$MESS["SLIDE_WIDHT"] = "Ширина блока";
-$MESS["SHOW_TEXT"] = "Показать название";
-$MESS["BACKGROUND_IMAGE"] = "Путь до фона";
-$MESS["BACKGROUND_REPEAT"] = "Настройка фонового изображения";
-$MESS["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Макс число выводимое превьюшек на мобильном устройстве";
-$MESS["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Макс число выводимое превьюшек на мобильном устройстве";
-$MESS["SHOW_THUMBNAILS_GRADIENT"] = "Показывать градиент превьюшек";
-$MESS["TEXT_OFFSET"] = "Отступ загаловка в превьюшках";
-$MESS["PLAY_TIMER"] = "Время переключения слайдов";
-$MESS["PLAY"] = "Автоматически листать слайды";
-$MESS["TIMER_TEXT_COLOR"] = "Цвет текста таймера";
-$MESS["SETTINGS_CONTROL"] = "Настроки управления слайдами";
-$MESS["CONTROL_POSITION"] = "Расположение кнопок управления слайдами";
-$MESS["CONTROL_OFFSET"] = "Отступ элементов управления";
-$MESS["CONTROL_PREV_NEXT_BUTTON"] = "Показать кнопки назад вперед";
-$MESS["CONTROL_SLIDE_BUTTON"] = "Показать время переключения слайда";
-$MESS["CONTROL_SCROLL_BAR"] = "Показать полосу прокрутки";
-$MESS["CONTROL_ENABLED_MOUSE_WHEEL_SCROLL"] = "Включить переключение слайдов колесиком мышки";
-$MESS["CONTROL_SCROLL_BAR_TEXT_COLOR_NORMAL"] = "Цвет текста полосы прокрутки";
-$MESS["CONTROL_SCROLL_BAR_TEXT_COLOR_SELECTED"] = "Цвет наведения на текст полосы прокрутки";
-$MESS["CONTROL_SCROLL_BAR_KEYBOARD_SUPPORT"] = "Поддержка клавиатуры полосы прокрутки";
-$MESS["SETTINGS_LIGHT_BOX"] = "Настройки лайт бокса";
-$MESS["LIGHT_BOX_BUTTON_NEXT_PREV"] = "Показать кнопки назад вперед";
-$MESS["LIGHT_BOX_BUTTON_ZOOM"] = "Показать кнопку zoom";
-$MESS["LIGHT_BOX_BUTTON_INFO"] = "Показать кнопку инфо";
-$MESS["LIGHT_BACKGROUND_COLOR"] = "Цвет фона";
-$MESS["LIGHT_BOX_BACKGROUND_WINDOW_INFO_COLOR"] = "Цвет фона окна информация об изображении";
-$MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_1"] = "Цвет рамки элемнтов-1";
-$MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_2"] = "Цвет рамки элемнтов-2";
-$MESS["LIGHT_BOX_ITEMS_BACKGROUND_COLOR"] = "Цвет фона элеметов";
-$MESS["LIGHT_BOX_OPACITY"] = "Прозрачность фона";
-$MESS ['SETTINGS_LINK'] = "Укажите свойство из котого брать ссылку изображения";
-$MESS ['YES'] = "Да";
-$MESS ['NO'] = "Нет";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$ MESS ["IBLOCK_CACHE_FILTER"] = "Cache during a filter";
+$ MESS ["T_IBLOCK_DESC_FID"] = "ID";
+$ MESS ["T_IBLOCK_DESC_FNAME"] = "Name";
+$ MESS ["T_IBLOCK_DESC_LIST_ID"] = "The code information block";
+$ MESS ["T_IBLOCK_DESC_LIST_TYPE"] = "Type of information block (used only for verification)";
+$ MESS ["T_IBLOCK_DESC_LIST_CONT"] = "Number of news on the page";
+$ MESS ["T_IBLOCK_DESC_DETAIL_PAGE_URL"] = "URL page detailed view (by default - from information block settings)";
+$ MESS ["T_IBLOCK_DESC_INCLUDE_IBLOCK_INTO_CHAIN"] = "Include information block in a chain of navigation";
+$ MESS ["T_IBLOCK_PROPERTY"] = "Properties";
+$ MESS ["T_IBLOCK_FILTER"] = "Filter";
+$ MESS ["IBLOCK_FIELD"] = "Fields";
+$ MESS ["T_IBLOCK_DESC_ACTIVE_DATE_FORMAT"] = "The format of the show date";
+$ MESS ["T_IBLOCK_DESC_PAGER_NEWS"] = "News";
+$ MESS ["T_IBLOCK_DESC_PREVIEW_TRUNCATE_LEN"] = "The maximum length of the announcement to output (only for text)";
+$ MESS ["T_IBLOCK_DESC_HIDE_LINK_WHEN_NO_DETAIL"] = "Hide link, if there is no detailed description";
+$ MESS ["IBLOCK_SECTION_ID"] = "ID section";
+$ MESS ["IBLOCK_SECTION_CODE"] = "code section";
+$ MESS ["T_IBLOCK_DESC_ADD_SECTIONS_CHAIN"] = "Include navigation section in the chain";
+$ MESS ["T_IBLOCK_DESC_CHECK_DATES"] = "Show only active at the moment the elements";
+$ MESS ["CP_BNL_SET_STATUS_404"] = "Set the status of 404, if you do not find the items, or";
+$ MESS ["CP_BNL_CACHE_GROUPS"] = "To address the access rights";
+$ MESS ["THEME_CORUSEL"] = "The theme of the carousel";
+$ MESS ["FLUID"] = "Adaptation to the width";
+$ MESS ["BACKGROUND_COLOR"] = "Fill Color";
+$ MESS ["THUMBNAIL_WIDHT"] = "width preview";
+$ MESS ["THUMBNAIL_HEIGHT"] = "The height of the preview";
+$ MESS ["BIG_WIDTH"] = "width details";
+$ MESS ["BIG_HEIGHT"] = "Vystota details";
+$ MESS ["SLIDE_HEIGHT"] = "The height of the block";
+$ MESS ["SLIDE_WIDHT"] = "width unit";
+$ MESS ["SHOW_TEXT"] = "Display Name";
+$ MESS ["BACKGROUND_IMAGE"] = "The path to the background";
+$ MESS ["BACKGROUND_REPEAT"] = "Setting a background image";
+$ MESS ["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Max number of the displayed thumbnails on the mobile device";
+$ MESS ["MAX_NUM_THUMBNAILS_ON_MOBILE"] = "Max number of the displayed thumbnails on the mobile device";
+$ MESS ["SHOW_THUMBNAILS_GRADIENT"] = "Show gradient previews";
+$ MESS ["TEXT_OFFSET"] = "indent zagalovka in thumbnails";
+$ MESS ["PLAY_TIMER"] = "Time switch slides";
+$ MESS ["PLAY"] = "Automatically flipping slides";
+$ MESS ["TIMER_TEXT_COLOR"] = "Text color timer";
+$ MESS ["SETTINGS_CONTROL"] = "Preset the control slides";
+$ MESS ["CONTROL_POSITION"] = "The layout of the control slides";
+$ MESS ["CONTROL_OFFSET"] = "Offset controls";
+$ MESS ["CONTROL_PREV_NEXT_BUTTON"] = "Show back button forward";
+$ MESS ["CONTROL_SLIDE_BUTTON"] = "Show the switching slide";
+$ MESS ["CONTROL_SCROLL_BAR"] = "Show scroll bars";
+$ MESS ["CONTROL_ENABLED_MOUSE_WHEEL_SCROLL"] = "Turn the mouse wheel to switch slides";
+$ MESS ["CONTROL_SCROLL_BAR_TEXT_COLOR_NORMAL"] = "Text color scroll bar";
+$ MESS ["CONTROL_SCROLL_BAR_TEXT_COLOR_SELECTED"] = "Colour pointing to the text of the scroll bar";
+$ MESS ["CONTROL_SCROLL_BAR_KEYBOARD_SUPPORT"] = "Support for keyboard scroll bar";
+$ MESS ["SETTINGS_LIGHT_BOX"] = "Setting light boxes";
+$ MESS ["LIGHT_BOX_BUTTON_NEXT_PREV"] = "Show back button forward";
+$ MESS ["LIGHT_BOX_BUTTON_ZOOM"] = "Show button zoom";
+$ MESS ["LIGHT_BOX_BUTTON_INFO"] = "Show Info button";
+$ MESS ["LIGHT_BACKGROUND_COLOR"] = "Background Color";
+$ MESS ["LIGHT_BOX_BACKGROUND_WINDOW_INFO_COLOR"] = "The background color of the window image information";
+$ MESS ["LIGHT_BOX_ITEMS_BORDER_COLOR_1"] = "border color elemntov-1";
+$ MESS ["LIGHT_BOX_ITEMS_BORDER_COLOR_2"] = "border color elemntov-2";
+$ MESS ["LIGHT_BOX_ITEMS_BACKGROUND_COLOR"] = "Background color elements onto";
+$ MESS ["LIGHT_BOX_OPACITY"] = "Background transparency";
+$ MESS ['SETTINGS_LINK'] = "Enter the property from which you'll take a reference image";
+$ MESS ['YES'] = "Yes";
+$ MESS ['NO'] = "No";

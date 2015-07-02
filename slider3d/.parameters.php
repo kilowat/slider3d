@@ -20,7 +20,7 @@ $arSortFields = Array(
 		"SORT"=>GetMessage("T_IBLOCK_DESC_FSORT"),
 		"TIMESTAMP_X"=>GetMessage("T_IBLOCK_DESC_FTSAMP")
 	);
-
+$arIBlockType = CIBlockParameters::GetIBlockTypes();
 $arProperty_LNS = array();
 $rsProp = CIBlockProperty::GetList(Array("sort"=>"asc", "name"=>"asc"), Array("ACTIVE"=>"Y", "IBLOCK_ID"=>(isset($arCurrentValues["IBLOCK_ID"])?$arCurrentValues["IBLOCK_ID"]:$arCurrentValues["ID"])));
 while ($arr=$rsProp->Fetch())
@@ -49,6 +49,13 @@ $arComponentParameters = array(
 			"VALUES" => $arIBlocks,
 			"DEFAULT" => '={$_REQUEST["ID"]}',
 			"ADDITIONAL_VALUES" => "Y",
+			"REFRESH" => "Y",
+		),
+		"IBLOCK_TYPE" => array(
+			"PARENT" => "BASE",
+			"NAME" => GetMessage("T_IBLOCK_TYPE"),
+			"TYPE" => "LIST",
+			"VALUES" => $arIBlockType,
 			"REFRESH" => "Y",
 		),
 	"LINK"=>array(
