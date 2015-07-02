@@ -1,16 +1,7 @@
 <?
 $MESS["IBLOCK_CACHE_FILTER"] = "Кешировать при установленном фильтре";
-$MESS["T_IBLOCK_DESC_ASC"] = "По возрастанию";
-$MESS["T_IBLOCK_DESC_DESC"] = "По убыванию";
 $MESS["T_IBLOCK_DESC_FID"] = "ID";
 $MESS["T_IBLOCK_DESC_FNAME"] = "Название";
-$MESS["T_IBLOCK_DESC_FACT"] = "Дата начала активности";
-$MESS["T_IBLOCK_DESC_FSORT"] = "Сортировка";
-$MESS["T_IBLOCK_DESC_FTSAMP"] = "Дата последнего изменения";
-$MESS["T_IBLOCK_DESC_IBORD1"] = "Поле для первой сортировки новостей";
-$MESS["T_IBLOCK_DESC_IBBY1"] = "Направление для первой сортировки новостей";
-$MESS["T_IBLOCK_DESC_IBORD2"] = "Поле для второй сортировки новостей";
-$MESS["T_IBLOCK_DESC_IBBY2"] = "Направление для второй сортировки новостей";
 $MESS["T_IBLOCK_DESC_LIST_ID"] = "Код информационного блока";
 $MESS["T_IBLOCK_DESC_LIST_TYPE"] = "Тип информационного блока (используется только для проверки)";
 $MESS["T_IBLOCK_DESC_LIST_CONT"] = "Количество новостей на странице";
@@ -68,8 +59,9 @@ $MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_1"] = "Цвет рамки элемнтов-
 $MESS["LIGHT_BOX_ITEMS_BORDER_COLOR_2"] = "Цвет рамки элемнтов-2";
 $MESS["LIGHT_BOX_ITEMS_BACKGROUND_COLOR"] = "Цвет фона элеметов";
 $MESS["LIGHT_BOX_OPACITY"] = "Прозрачность фона";
-
-
+$MESS ['SETTINGS_LINK'] = "Укажите свойство из котого брать ссылку изображения";
+$MESS ['YES'] = "Да";
+$MESS ['NO'] = "Нет";
 
 
 

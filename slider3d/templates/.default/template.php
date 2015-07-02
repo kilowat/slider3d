@@ -252,7 +252,6 @@ switch ($arParams["THEME_CORUSEL"]) {
            
     }
     </script>
-
     <div id="slider-3d"></div>
     <div id="mainThumbsHolder">
         <div id="thumbsHolder"></div>
@@ -260,9 +259,15 @@ switch ($arParams["THEME_CORUSEL"]) {
     <ul id="playList1" style="display: none;"> 
     <ul data-cat="">
         <?foreach($arResult["ITEMS"] as $arItems):?>
-            <?$slideImages = CFile::ResizeImageGet($arItems["PREVIEW_PICTURE"], Array("width" => $arParams['BIG_WIDTH'], "height" => $arParams['BIG_HEIGHT']));?>
+			<?$picture = ($arItems["PREVIEW_PICTURE"]>0 ? $arItems["PREVIEW_PICTURE"] : $arItems["DETAIL_PICTURE"])?>
+            <?$slideImages = CFile::ResizeImageGet($picture, Array("width" => $arParams['BIG_WIDTH'], "height" => $arParams['BIG_HEIGHT']));?>
              <ul>
-                <li data-type="media" data-url="<?=$slideImages['src']?>"></li>
+				<?
+				$dataMedia =  '<li data-type="media" data-url="'.$slideImages['src'].'"></li>';
+				if(!empty($arItems["PROPERTY_LINK_VALUE"]))
+					$dataMedia = '<li data-type="link" data-url="'.$arItems["PROPERTY_LINK_VALUE"].'" data-target="_blank"></li>';
+				?>
+                <?=$dataMedia?>
                 <li data-thumbnail-path="<?=$slideImages['src']?>" data-thumbnail-width="<?echo $arParams["THUMBNAIL_WIDHT"]?>" data-thumbnail-height="<?echo $arParams["THUMBNAIL_HEIGHT"]?>"></li>
                 <li data-thumbnail-text="">
                     <p class="smallLabel"><?=$arItems["NAME"]?></p>

@@ -1,4 +1,4 @@
 <?
-$MESS ['MAIN_FEEDBACK_COMPONENT_NAME'] = "Feedback Form";
-$MESS ['MAIN_FEEDBACK_COMPONENT_DESCR'] = "Creates a form to send e-mail messages.";
+$MESS ['SLIDER3D_COMPONENT_NAME'] = "Slider 3D";
+$MESS ['SLIDER3D_COMPONENT_DESCR'] = "Slider 3D";
 ?>
